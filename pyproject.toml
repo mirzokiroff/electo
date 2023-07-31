@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "electo"
+version = "0.1.0"
+description = ""
+authors = ["jakhongir <ganiyevuzb@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+django = "^4.2.3"
+django-ckeditor = "^6.7.0"
+pillow = "^10.0.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
