@@ -1,0 +1,16 @@
+{
+  "web": {
+    "client_id": "1018675898293-icb0s5agt45dg061mo7lkfco27c3q33v.apps.googleusercontent.com",
+    "project_id": "django-oauth-394904",
+    "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+    "token_uri": "https://oauth2.googleapis.com/token",
+    "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+    "client_secret": "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",
+    "redirect_uris": [
+      "http://127.0.0.1:8000/accounts/google/login/callback/"
+    ],
+    "javascript_origins": [
+      "http://127.0.0.1:8000"
+    ]
+  }
+}

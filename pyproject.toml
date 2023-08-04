@@ -10,6 +10,7 @@ python = "^3.11"
 django = "^4.2.3"
 django-ckeditor = "^6.7.0"
 pillow = "^10.0.0"
+django-allauth = "^0.54.0"
 
 
 [build-system]

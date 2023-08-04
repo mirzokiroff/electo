@@ -1,3 +1,4 @@
+from django.contrib.auth.views import LoginView
 from django.views.generic import TemplateView, ListView, DetailView
 
 from products.models import Product
@@ -26,3 +27,7 @@ class StoreView(TemplateView):
 
 class CheckoutView(TemplateView):
     template_name = 'electro/checkout.html'
+
+
+class CustomLoginView(LoginView):
+    template_name = 'electro/login.html'
