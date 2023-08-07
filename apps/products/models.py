@@ -41,15 +41,13 @@ class Product(Model):
 
 class Review(Model):
     text = TextField()
-    user = ForeignKey('auth.User', on_delete=SET_NULL, null=True)
+    user = ForeignKey('users.User', on_delete=SET_NULL, null=True)
     created_at = DateTimeField(auto_now_add=True)
 
 
 class ProductImages(Model):
     product = ForeignKey('products.Product', CASCADE, 'images')
     image = ImageField(upload_to='images/products/')
-
-
 
 
 class Color(Model):
