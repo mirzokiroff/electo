@@ -15,7 +15,9 @@ def send_to_gmail(email):
     print(email)
     otp_code = str(randint(1000, 9999))  # Generate a 4-digit OTP code
     cache.set(f'{settings.CACHE_KEY_PREFIX}:{otp_code}', email, timeout=settings.CACHE_TTL)
-
+    # {
+    #     'otp:1119': 'ganiyevuz@mail.ru'
+    # }
     subject = 'Activate your account'
 
     message = render_to_string(f'electro/email_template.html', {'code': otp_code})

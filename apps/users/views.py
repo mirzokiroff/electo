@@ -18,6 +18,9 @@ class RegisterView(CreateView):
         send_to_gmail.apply_async(args=[user.email], countdown=5)
         self.object = user
         cache.set(f'user:{user.email}', user, timeout=settings.CACHE_TTL)
+        # {
+        #     'user:ganiyevuz@mail.ru': user
+        # }
         return HttpResponseRedirect(self.get_success_url())
 
     def form_invalid(self, form):
